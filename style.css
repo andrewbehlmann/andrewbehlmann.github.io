@@ -20,4 +20,13 @@ h2 { font-size: 1.2rem; margin: 2em 0 .4em; }
 .tagline { margin: 4px 0 0; }
 a { color: var(--accent); }
 ul { padding-left: 1.2em; }
+.keys { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px 32px; }
+.keys table { border-collapse: collapse; width: 100%; }
+.keys caption { text-align: left; font-weight: 600; padding: 12px 0 4px; }
+.keys td { padding: 4px 0; border-top: 1px solid var(--rule); vertical-align: top; }
+.keys td:first-child { width: 9em; white-space: nowrap; }
+kbd {
+  font: 600 .85em/1 ui-monospace, "SF Mono", Menlo, monospace; padding: 3px 6px; border-radius: 5px;
+  border: 1px solid var(--rule); border-bottom-width: 2px; background: color-mix(in srgb, var(--rule) 35%, var(--bg));
+}
 footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 16px; font-size: .9rem; }
