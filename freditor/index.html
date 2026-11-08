@@ -26,10 +26,15 @@
   <ul>
     <li>Edit Markdown as formatted text, or switch to the raw Markdown source at any time (⌘E).</li>
     <li>Word-style table picker (⌘T), headings, lists, task lists, quotes, code blocks and links.</li>
+    <li>Find and replace (⌘F), with every match highlighted.</li>
+    <li>Syntax-highlighted code blocks for about 20 languages.</li>
+    <li>Open documents as tabs in one window, or as separate windows.</li>
+    <li>Export as HTML: a standalone page with styling and code colors built in.</li>
+    <li>Files that use hard line breaks or reference links open in Markdown mode, so saving never changes them.</li>
     <li>Plain ⌘-key shortcuts throughout — no finger gymnastics.</li>
     <li>Light and dark themes that follow your Mac, a font menu right in the toolbar, and zoom.</li>
     <li>Print (⌘P), with a light page even in dark mode.</li>
-    <li>Optional autosave, live line/word/character counts, rename files right from the toolbar.</li>
+    <li>Optional autosave, live line/word/character counts (for the selection too), rename files right from the toolbar.</li>
     <li>Native Apple Silicon app. No account, no tracking, works offline.</li>
   </ul>
 
@@ -51,6 +56,8 @@
       <tr><td><kbd>⌘Y</kbd></td><td>Redo</td></tr>
       <tr><td><kbd>⌘X</kbd> <kbd>⌘C</kbd> <kbd>⌘V</kbd></td><td>Cut, copy, paste</td></tr>
       <tr><td><kbd>⌘A</kbd></td><td>Select all</td></tr>
+      <tr><td><kbd>⌘F</kbd></td><td>Find and replace</td></tr>
+      <tr><td><kbd>⌘G</kbd></td><td>Find next</td></tr>
     </table>
     <table>
       <caption>Format</caption>
@@ -74,13 +81,15 @@
       <tr><td><kbd>⌘,</kbd></td><td>Settings</td></tr>
       <tr><td><kbd>⌘M</kbd></td><td>Minimize</td></tr>
       <tr><td><kbd>⌘H</kbd></td><td>Hide Freditor</td></tr>
+      <tr><td><kbd>⌘[</kbd> <kbd>⌘]</kbd></td><td>Previous / next tab</td></tr>
       <tr><td><kbd>⌘`</kbd></td><td>Next Freditor window</td></tr>
       <tr><td><kbd>⌘/</kbd></td><td>Keyboard shortcuts</td></tr>
     </table>
   </div>
   <p class="meta">In the table picker, use the mouse, or the arrow keys and Return. In a table, Tab and Shift-Tab move
     between cells, and Tab in the last cell adds a row. fn-Tab and fn-Shift-Tab indent and outdent list items, including
-    lists inside table cells. Right-click inside a table to add or remove rows and columns. Numbered lists, task lists, code blocks and horizontal rules are in the toolbar
+    lists inside table cells. Format ▸ Edit Table (or a right-click inside a table) adds, deletes and aligns rows and columns. In the find bar,
+    Return finds the next match and Shift-Return the previous one. Numbered lists, task lists, code blocks and horizontal rules are in the toolbar
     and the Format menu.</p>
 
   <h2>Requirements</h2>
@@ -99,6 +108,8 @@
   <ul>
     <li><a href="https://github.com/nhn/tui.editor">Toast UI Editor</a> by NHN Cloud — the editing engine
       (<a href="https://github.com/nhn/tui.editor/blob/master/LICENSE">MIT License</a>).</li>
+    <li><a href="https://prismjs.com">Prism</a> by Lea Verou — code highlighting
+      (<a href="https://github.com/PrismJS/prism/blob/master/LICENSE">MIT License</a>).</li>
     <li><a href="https://github.com/IBM/plex">IBM Plex Mono</a> by IBM — the default typeface
       (<a href="https://openfontlicense.org">SIL Open Font License 1.1</a>).</li>
   </ul>
